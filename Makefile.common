@@ -1,13 +1,10 @@
-PROJECT = $(notdir $(patsubst %/,%,$(CURDIR)))
-PACKAGE = $(shell go list)
-
 MAKE_DIR ?= .make
 
 # all go sources in build tree excluding vendor
-SOURCES = $(shell find . -type f \( -iname '*.go' \) -not \( -path "./vendor/*" -path ".*" \))
+SOURCES ?= $(shell find . -type f \( -iname '*.go' \) -not \( -path "./vendor/*" -path ".*" \))
 
 export GO111MODULE = on
-export CGO_ENABLED = 0
+export CGO_ENABLED ?= 0
 
 # do not use automatic targets
 .SUFFIXES:

@@ -6,7 +6,6 @@ rm -f \
     .make/.gitignore \
     .make/setup.sh \
     .make/Makefile.common \
-    .make/Makefile.shadow \
     .make/Makefile.revive \
     .make/revive.toml
 mkdir -p .make

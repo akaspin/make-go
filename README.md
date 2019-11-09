@@ -1,5 +1,7 @@
 # go-make
 
+The goal is simplify and streamline development of Golang projects.
+
 ## Installation and update 
 
 ```console
@@ -13,4 +15,5 @@ installed Makefiles in your Make.
 include .make/Makefile.common .make/Makefile.shadow
 ```
 
-Use `make-go-update` target to update to latest version.
+Use `make-go-update` target to update to the latest version.
+
